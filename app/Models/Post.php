@@ -12,14 +12,6 @@ class Post extends Model
 
     protected $primaryKey = 'post_id';
 
-    protected $posts = [
-        'post_id',
-        'title',
-        'description',
-        'created_at',
-        'updated_at'
-    ];
-
     public function user()
     {
         return $this->belongsTo(User::class);
